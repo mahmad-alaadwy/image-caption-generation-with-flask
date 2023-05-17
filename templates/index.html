@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Image Captioning System</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  /* .submit{
+    width: 90px;
+    height: 30px;
+    margin-top: 40%;
+    margin-left:45%;
+  } */
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .navbar {
+      background-color: #333333;
+      padding: 10px;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .navbar li {
+      float: left;
+    }
+
+    .navbar li a {
+      display: block;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      text-align: center;
+      padding: 10px;
+      margin: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-top: 20%;
+
+    }
+
+    .gradient-bg {
+      background: linear-gradient(to bottom right, #f767a0, #face48);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ffffff;
+      margin: 20px;
+    }
+</style>
+</head>
+
+<body>
+ <div class="login">
+
+    <form action="{{ url_for('whatItIs')}}"method="post">
+      <div class="gradient-bg">
+        <button class="button">Caption Image</button>
+      </div>
+        </form>
+
+ </div>
+
+</body>
+</html>
