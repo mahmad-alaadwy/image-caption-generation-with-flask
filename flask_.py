@@ -210,7 +210,7 @@ def whatItIs():
     text=predict_caption__()
     say_text("the captured image contains a ",text)
 
-    return render_template("index.html")
+    return render_template("index.html", prediction_text = "  {}  ".format(text))
 
 if __name__ == "__main__":
     flask_app.run(debug=True)

@@ -78,6 +78,11 @@
       color: #ffffff;
       margin: 20px;
     }
+    .result{
+      font-size: 24px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
 </style>
 </head>
 
@@ -86,6 +91,11 @@
 
     <form action="{{ url_for('whatItIs')}}"method="post">
       <div class="gradient-bg">
+
+        <div class="result">
+          {{ prediction_text }}
+         </div>
+
         <button class="button">Caption Image</button>
       </div>
         </form>
